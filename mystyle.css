@@ -254,6 +254,7 @@ p{
   display: inline-block;
   animation: load 15s ease;
 }
+
 #load{
   font-family: "Avenir Next", "Avenir", sans-serif;
   font-weight: bold;
