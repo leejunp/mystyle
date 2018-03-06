@@ -201,3 +201,71 @@ p{
   margin-bottom: -2vw;
   line-height: 2.3vw;
 }
+
+#black{
+  color:black;
+  width:60vw;
+  margin:0 auto;
+  margin-top:13vw;
+  line-height: 9vw;
+}
+
+.arrow{
+	height: 0px; width: 0px;
+	border: 3vw solid;
+	border-color:
+		#F40BAE
+    #F40BAE
+		transparent
+		transparent;
+	transform: rotate(45deg);
+  float: right;
+  margin-top: -16vw;
+  margin-right: 10vw;
+}
+
+.arrow:hover{
+  border-color:
+		#341D89
+    #341D89
+		transparent
+		transparent;
+}
+
+#progressbar{
+  height: 26px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  background: #F40BAE;
+  border-radius: 10px;
+  margin: -20px 0 0 -100px;
+  padding: 2px;
+}
+#loading{
+  transition: all 500ms ease;
+  height: 20px;
+  width: calc(90% - 10px);
+  border-radius: 8px;
+  background: white;
+  position: absolute;
+  margin: 3px;
+  display: inline-block;
+  animation: load 15s ease;
+}
+#load{
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: -30px;
+}
+
+@keyframes load{
+  0%{
+    width: 2%;
+  }
+  10%{
+    width: 10%;
+  }
+}
