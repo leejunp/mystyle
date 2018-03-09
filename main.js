@@ -111,7 +111,7 @@ var TxtType = function(el, toRotate, period) {
 
       setTimeout(function(){
           $('#butt3').fadeIn(2200);
-      },12000);
+      },16000);
 
   });
 
