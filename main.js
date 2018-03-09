@@ -69,11 +69,13 @@ var TxtType = function(el, toRotate, period) {
     var checkBox = document.getElementById("myCheck");
     var text = document.getElementById("wrapper");
     if (checkBox.checked == true){
-        text.style.display = "block";
-        text.classList.add('horizTranslate');
+      text.classList.add('horizTranslate');
+      text.classList.remove('horizTranslateb');
       }
-    if (checkBox.checked == false){
-       text.classList.add('horizTranslateb');
+    else{
+      text.classList.add('horizTranslateb');
+      text.classList.remove('horizTranslate');
+
       }
     }
 
