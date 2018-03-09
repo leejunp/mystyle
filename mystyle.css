@@ -483,13 +483,11 @@ a.author-information:hover {
   transform-origin: 0% 0%;
   transform: translate(20%, 0%);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  position: fixed;
 }
 
 #wrapper.horizTranslateb {
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
-  transform: translate(5.5%, 0%);
+  transform: translate(0%, 0%);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  position: fixed;
 }
