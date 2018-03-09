@@ -8,42 +8,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style-responsive.css">
 
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   </head>
-  <body class="blue">
-    <pre>A problem has been detected and Windows has been shut down to prevent damage
-to your computer.
+  <body>
 
-The problem seems to be caused by the following file: SPCMDCON.SYS
+    <nav role="navigation">
+      <div id="rest">
+      <div id="menuToggle">
+        <input type="checkbox" id="myCheck"  onclick="myFunction()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="index2.html"><li>Why</li></a>
+          <a href="index3.html"><li>How</li></a>
+          <a href="index4.html"><li>Emotions</li></a>
+          <a href="index5.html"><li>More</li></a>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    <a href="index.html" class="name" id="logo">LEE</a>
 
-PAGE_FAULT_IN_NONPAGED_AREA
+    <div id="progressbar">
+      <span id="loading"></span>
+      <div id="load">loading</div>
+    </div>
 
-If this is the first time you've seen this stop error screen,
-restart your computer. If this screen appears again, follow
-these steps:
+    <a id="butt" href="index4-3.html" class="mybutton bounce" >&#62;</a>
 
-Check to make sure any new hardware or software is properly installed.
-If this is a new installation, ask your hardware or software manufacturer
-for any Windows updates you might need.
-
-If problems continue, disable or remove any newly installed hardware
-or software. Disable BIOS memory options such as caching or shadowing.
-If you need to use Safe Mode to remove or disable components, restart
-your computer, press F8 to select Advanced Startup Options, and then
-select Safe Mode.
-
-Technical information:
-
-*** STOP: 0x00000050 (0xFD3094C2,0x00000001,0xFBFE7617,0x0000 0000)
-
-
-*** SPCMDCON.SYS - Address FBFE7617 base at FBFE5000, DateStamp 3d6dd67c
-</pre>
-
-<a id="butt2" href="index4-3.html" class="mybutton bounce" >&#62;</a>
-
-  </body>
-      <script src="main.js"></script>
-  </html>
+</body>
+    <script src="main.js"></script>
+</html>
