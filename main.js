@@ -60,8 +60,99 @@ var TxtType = function(el, toRotate, period) {
       var text = document.getElementById("wrapper");
       if (checkBox.checked == true){
           text.style.display = "block";
-          document.getElementById("wrapper").style.marginLeft = "300px";
+          document.getElementById("wrapper").animate({left: '250px'}) = "300px";
       } else {
          document.getElementById("wrapper").style.marginLeft = "83px";
       }
   }
+
+
+
+
+
+
+  $(function(){
+
+      $('#butt').hide();
+
+      setTimeout(function(){
+          $('#butt').fadeIn(2200);
+      },25000);
+
+  });
+
+  $(function(){
+
+      $('#butt2').hide();
+
+      setTimeout(function(){
+          $('#butt2').fadeIn(2200);
+      },10000);
+
+  });
+
+  $(function(){
+
+      $('#butt3').hide();
+
+      setTimeout(function(){
+          $('#butt3').fadeIn(2200);
+      },12000);
+
+  });
+
+
+
+
+
+  var click = 0;
+  var beenClicked = false;
+  var canClick = true;
+  $("#gam").click(function() {
+    if (window.canClick == true) {
+
+      var colour = '#' + Math.floor(Math.random() * 16777215).toString(16);
+      click++;
+      timing();
+      $(".start").text(click);
+      $("#game").css({
+        backgroundColor: colour
+      });
+    }
+  });
+
+  var sec = $(".timer").text() || 0;
+
+  function timing() {
+    if (beenClicked == false) {
+      beenClicked = true;
+      $(".timer").show();
+      var timer = setInterval(function() {
+        $(".timer").text(--sec);
+        if (sec == 0) {
+          $(".timer").fadeOut('fast');
+          clearInterval(timer);
+          window.canClick = false;
+          if (click == 1) {
+            $(".start").append(" Click");
+          } else {
+            $(".start").append(" Clicks");
+          }
+          $(".sub").show().text("or " + window.click * 6 + " a minute.");
+          $("#reset").fadeIn(1000);
+        }
+      }, 1000);
+    }
+  }
+
+  $("#reset").click(function(event) {
+    event.stopPropagation();
+    $("#reset").hide();
+    $(".sub").hide();
+    $(".start").text("Click Away");
+    $(".timer").text("10");
+    sec = $(".timer").text() || 0;
+    click = 0;
+    beenClicked = false;
+    canClick = true;
+  });

@@ -121,6 +121,8 @@ nav{
   transform: none;
 }
 
+/*main page*/
+
 #box{
   width: 100%;
   height:100%;
@@ -210,27 +212,7 @@ p{
   line-height: 9vw;
 }
 
-.arrow{
-	height: 0px; width: 0px;
-	border: 3vw solid;
-	border-color:
-		#F40BAE
-    #F40BAE
-		transparent
-		transparent;
-	transform: rotate(45deg);
-  float: right;
-  margin-top: -16vw;
-  margin-right: 10vw;
-}
-
-.arrow:hover{
-  border-color:
-		#341D89
-    #341D89
-		transparent
-		transparent;
-}
+/*loading screen*/
 
 #progressbar{
   height: 26px;
@@ -243,6 +225,7 @@ p{
   margin: -20px 0 0 -100px;
   padding: 2px;
 }
+
 #loading{
   transition: all 500ms ease;
   height: 20px;
@@ -256,11 +239,12 @@ p{
 }
 
 #load{
-  font-family: "Avenir Next", "Avenir", sans-serif;
   font-weight: bold;
   text-align: center;
   margin-top: -30px;
 }
+
+/*side button*/
 
 @keyframes load{
   0%{
@@ -268,5 +252,218 @@ p{
   }
   10%{
     width: 10%;
+  }
+}
+
+@-webkit-keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  60% {
+    -webkit-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+}
+@-moz-keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-30px);
+  }
+  60% {
+    transform: translateX(-15px);
+  }
+}
+@keyframes bounceRight {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -ms-transform: translateX(-30px);
+    transform: translateX(-30px);
+  }
+  60% {
+    -ms-transform: translateX(-15px);
+    transform: translateX(-15px);
+  }
+}
+
+  .bounce {
+    -webkit-animation: bounceRight 2s infinite;
+    animation: bounceRight 2s infinite;
+  }
+
+  .mybutton{
+    font-size: 10vw;
+    font-weight: bolder;
+    color:#F40BAE;
+    margin-top:-20vw;
+    margin-right: 6vw;
+    float:right;
+  }
+
+  .mybutton:hover{
+    color: #341D89;
+  }
+
+  #butt{
+    margin-top:18vw;
+  }
+
+  #butt2{
+    margin-top:22vw;
+  }
+
+  #butt3{
+    margin-top:27vw;
+  }
+
+/*blue screen*/
+
+.blue {
+  margin: 0;
+  background: #00A;
+  color: #fff;
+  font-size: 20px;
+
+  user-select: none;
+  cursor: default;
+}
+
+pre {
+  margin: 0 auto;
+  display: inline-block;
+  font-size: 1em;
+  font-family: Consolas, "Lucida Console", "Courier New";
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+/*game*/
+
+#game {
+  background-color: #d35400;
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+  font: 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  line-height: 1.5em;
+  text-align: center;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.display {
+  height: 33%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 60px;
+  right: 0;
+  margin: auto auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.start {
+  font-size: 400%;
+  text-transform: uppercase;
+  margin-top:30vw;
+}
+
+.sub {
+  font-size: 200%;
+  margin-bottom: 10vw;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 60px;
+}
+
+.author-information {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  padding-left: 30px;
+  font-size: 150%;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+a.author-information:hover {
+  color: rgba(255, 255, 255, 0.3);
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+.timer {
+  position: absolute;
+  right: 25px;
+  bottom: 10px;
+  height: 70px;
+  padding-left: 27px;
+  font-size: 600%;
+  margin-top:-60vw;
+}
+
+#reset {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 200%;
+  padding: 10px;
+  margin-top:10vw;
+}
+
+#reset:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 900%;
+  }
+  .sub {
+    font-size: 300%;
   }
 }
