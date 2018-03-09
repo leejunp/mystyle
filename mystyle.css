@@ -121,6 +121,10 @@ nav{
   transform: none;
 }
 
+#menuToggle input:checked ~ #wrapper{
+  font-size: 100px;
+}
+
 /*main page*/
 
 #box{
@@ -211,6 +215,7 @@ p{
   margin-top:13vw;
   line-height: 9vw;
 }
+
 
 /*loading screen*/
 
@@ -341,14 +346,14 @@ p{
 
 .blue {
   margin: 0;
-  background: #00A;
+  background-color: #00A;
   color: #fff;
   font-size: 20px;
 
   user-select: none;
   cursor: default;
-}
 
+}
 pre {
   margin: 0 auto;
   display: inline-block;
@@ -356,8 +361,8 @@ pre {
   font-family: Consolas, "Lucida Console", "Courier New";
 
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top:50%;
+  left:50%;
 }
 
 /*game*/
@@ -466,4 +471,25 @@ a.author-information:hover {
   .sub {
     font-size: 300%;
   }
+}
+
+
+
+
+
+
+#wrapper.horizTranslate {
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(20%, 0%);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  position: fixed;
+}
+
+#wrapper.horizTranslateb {
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(5.5%, 0%);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  position: fixed;
 }

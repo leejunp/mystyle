@@ -55,8 +55,7 @@ var TxtType = function(el, toRotate, period) {
         document.body.appendChild(css);
     };
 
-    function myFunction() {
-      var checkBox = document.getElementById("myCheck");
+/*      var checkBox = document.getElementById("myCheck");
       var text = document.getElementById("wrapper");
       if (checkBox.checked == true){
           text.style.display = "block";
@@ -64,7 +63,20 @@ var TxtType = function(el, toRotate, period) {
       } else {
          document.getElementById("wrapper").style.marginLeft = "83px";
       }
-  }
+  }*/
+
+  function myFunction() {
+    var checkBox = document.getElementById("myCheck");
+    var text = document.getElementById("wrapper");
+    if (checkBox.checked == true){
+        text.style.display = "block";
+        text.classList.add('horizTranslate');
+      }
+    if (checkBox.checked == false){
+       text.classList.add('horizTranslateb');
+      }
+    }
+
 
 
 
@@ -156,3 +168,21 @@ var TxtType = function(el, toRotate, period) {
     beenClicked = false;
     canClick = true;
   });
+
+
+  $(function() {
+  $(window).resize(function() {
+    $("pre").css({
+
+        marginTop: $("pre").height() / -2,
+        marginLeft: $("pre").width() / -2
+
+      });
+  }).resize();
+
+  $("body").click(function() {
+    if (screenfull.enabled) {
+      screenfull.toggle();
+    }
+  });
+});
