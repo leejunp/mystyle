@@ -60,7 +60,7 @@ var TxtType = function(el, toRotate, period) {
       var text = document.getElementById("wrapper");
       if (checkBox.checked == true){
           text.style.display = "block";
-          document.getElementById("wrapper").animate({left: '250px'}) = "300px";
+          document.getElementById("wrapper").style.marginLeft = "300px";
       } else {
          document.getElementById("wrapper").style.marginLeft = "83px";
       }
