@@ -481,7 +481,7 @@ a.author-information:hover {
 #wrapper.horizTranslate {
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
-  transform: translate(20%, 0%);
+  transform: translate(15%, 0%);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
