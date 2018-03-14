@@ -105,16 +105,6 @@ var TxtType = function(el, toRotate, period) {
 
   });
 
-  $(function(){
-
-      $('#butt3').hide();
-
-      setTimeout(function(){
-          $('#butt3').fadeIn(2200);
-      },16000);
-
-  });
-
 
 
 
@@ -122,8 +112,20 @@ var TxtType = function(el, toRotate, period) {
   var click = 0;
   var beenClicked = false;
   var canClick = true;
+
   $("#gam").click(function() {
     if (window.canClick == true) {
+
+      $(function(){
+        if (sec == 0) {
+          $('#butt3').hide();
+
+          setTimeout(function(){
+              $('#butt3').fadeIn(2200);
+          },1000);
+        }
+
+      });
 
       var colour = '#' + Math.floor(Math.random() * 16777215).toString(16);
       click++;
@@ -134,6 +136,8 @@ var TxtType = function(el, toRotate, period) {
       });
     }
   });
+
+
 
   var sec = $(".timer").text() || 0;
 
