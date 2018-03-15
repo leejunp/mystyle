@@ -24,8 +24,9 @@ nav{
 #menuToggle{
   display: block;
   position: relative;
-  top: 70px;
+  top: 50px;
   left: 50px;
+  position: fixed;
 
   z-index: 1;
 
@@ -146,7 +147,7 @@ nav{
   margin-left: 49%;
   display:block;
   max-width:0vw;
-  margin-top:40px;
+  margin-top:70px;
 }
 
 #logo{
@@ -193,10 +194,6 @@ h2{
   color:black;
   margin-top:10vw;
   margin-bottom: 1vw;
-}
-
-.first{
-  margin-top:0;
 }
 
 p{
