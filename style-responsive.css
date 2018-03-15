@@ -1,3 +1,5 @@
+@media (min-width: 320px) and (max-width: 579px) {
+
 body{
   margin: 0;
   padding: 0;
@@ -24,9 +26,9 @@ nav{
 #menuToggle{
   display: block;
   position: relative;
-  top: 50px;
+  top: 65px;
   left: 50px;
-  position: fixed;
+
 
   z-index: 1;
 
@@ -130,7 +132,7 @@ nav{
 
 #box{
   width: 100%;
-  height:103%;
+  height:105%;
   margin: 0;
   padding: 0;
   display:block;
@@ -144,10 +146,10 @@ nav{
   font-size: 30px;
   font-weight: bold;
   color:white;
-  margin-left: 49%;
+  margin-left: 46%;
   display:block;
   max-width:0vw;
-  margin-top:70px;
+  margin-top:30px;
 }
 
 #logo{
@@ -163,11 +165,11 @@ nav{
 }
 
 .heads{
-  font-size: 8vw;
+  font-size: 10vw;
   font-weight: bold;
   color:white;
   text-align: center;
-  margin-top:15vw;
+  margin-top:55vw;
   margin-bottom: -0.1vw;
 }
 
@@ -182,13 +184,13 @@ nav{
 }
 
 #wrapper{
-  width: 60vw;
+  width: 70vw;
   padding:15vw;
   margin:0 auto;
 }
 
 h2{
-  font-size: 3vw;
+  font-size: 5vw;
   text-align: left;
   font-weight: bold;
   color:black;
@@ -198,19 +200,19 @@ h2{
 
 p{
   color:black;
-  font-size:1.5vw;
+  font-size:3vw;
   text-align: left;
   display: inline-block;
-  margin-bottom: -2vw;
-  line-height: 2.3vw;
+  line-height: 5vw;
 }
 
 #black{
   color:black;
   width:60vw;
   margin:0 auto;
-  margin-top:13vw;
+  margin-top:60vw;
   line-height: 9vw;
+  font-size: 30px;
 }
 
 
@@ -300,12 +302,12 @@ p{
     transform: translateX(0);
   }
   40% {
-    -ms-transform: translateX(-30px);
-    transform: translateX(-30px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px);
   }
   60% {
-    -ms-transform: translateX(-15px);
-    transform: translateX(-15px);
+    -ms-transform: translateX(-5px);
+    transform: translateX(-5px);
   }
 }
 
@@ -315,7 +317,7 @@ p{
   }
 
   .mybutton{
-    font-size: 10vw;
+    font-size: 20vw;
     font-weight: bolder;
     color:#F40BAE;
     margin-top:-20vw;
@@ -327,16 +329,20 @@ p{
     color: #341D89;
   }
 
+  #butt0{
+    margin-top:-100px;
+  }
+  
   #butt{
-    margin-top:18vw;
+    margin-top:210px;
   }
 
   #butt2{
-    margin-top:-400px;
+    margin-top:-300px;
   }
 
   #butt3{
-    margin-top:27vw;
+    margin-top:270px;
     display:none;
   }
 
@@ -354,15 +360,16 @@ p{
 }
 
 #wot{
-  margin-top:12%;
-  margin-left: 20%;
+  margin-top:25%;
+  margin-left: 8%;
 }
+
 #bsod {
-  width: 60vw;
+  width: 300px;
   color:white;
   margin: 0 auto;
   display: inline-block;
-  font-size: 1em;
+  font-size: 0.6em;
   margin-top:1.2vw;
   line-height: 1.2;
   font-family: Consolas, "Lucida Console", "Courier New";
@@ -399,9 +406,10 @@ p{
 }
 
 .start {
-  font-size: 400%;
+  font-size: 40px;
   text-transform: uppercase;
-  margin-top:30vw;
+  margin-top:300px;
+  line-height: 50px;
 }
 
 .sub {
@@ -476,21 +484,4 @@ a.author-information:hover {
   }
 }
 
-
-
-
-
-
-#wrapper.horizTranslate {
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(15%, 0%);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#wrapper.horizTranslateb {
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(0%, 0%);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }

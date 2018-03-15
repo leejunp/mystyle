@@ -117,14 +117,11 @@ var TxtType = function(el, toRotate, period) {
     if (window.canClick == true) {
 
       $(function(){
-        if (sec == 0) {
           $('#butt3').hide();
 
           setTimeout(function(){
               $('#butt3').fadeIn(2200);
           },1000);
-        }
-
       });
 
       var colour = '#' + Math.floor(Math.random() * 16777215).toString(16);
@@ -174,21 +171,3 @@ var TxtType = function(el, toRotate, period) {
     beenClicked = false;
     canClick = true;
   });
-
-
-  $(function() {
-  $(window).resize(function() {
-    $("pre").css({
-
-        marginTop: $("pre").height() / -2,
-        marginLeft: $("pre").width() / -2
-
-      });
-  }).resize();
-
-  $("body").click(function() {
-    if (screenfull.enabled) {
-      screenfull.toggle();
-    }
-  });
-});
